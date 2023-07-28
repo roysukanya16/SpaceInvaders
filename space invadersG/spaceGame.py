@@ -20,7 +20,7 @@ mixer.music.load('background.wav')
 mixer.music.play(-1)    #-1 is to loop the sound
 
 # Title
-pygame.display.set_caption("Jite dakha")
+pygame.display.set_caption("SpaceInvaders")
 icon = pygame.image.load("startup.png")
 pygame.display.set_icon(icon)
 
@@ -67,10 +67,10 @@ with open("hiscore.txt","r") as f:
 
 
 # Game over text
-overfont= pygame.font.Font('freesansbold.ttf',40)
+overfont= pygame.font.Font('freesansbold.ttf',70)
 
 def game_over_text():
-    over_text = overfont.render("Tomar Dara Kicchu Hobe Na", True, (255, 255, 255))
+    over_text = overfont.render("   Game Over", True, (255, 255, 255))
     text = font.render("Your Score : " + str(score), True, (255, 255, 255))
     hitext = font.render("HiScore : " + str(hiscore), True, (255, 255, 255))
     screen.blit(over_text, (100,250))
